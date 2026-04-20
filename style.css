@@ -67,7 +67,6 @@ nav a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
     margin-bottom: 30px;
 }
 
@@ -102,7 +101,7 @@ section {
 }
 
 /* ===================== */
-/* BOX DE CONTEÚDO */
+/* BOX */
 /* ===================== */
 .box {
     background-color: rgba(0, 0, 0, 0.7);
@@ -123,7 +122,7 @@ section {
 }
 
 /* ===================== */
-/* GALERIA DE FOTOS */
+/* GALERIA */
 /* ===================== */
 .titulo-galeria {
     text-align: center;
@@ -145,7 +144,7 @@ section {
     position: absolute;
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: cover; /* PC */
     opacity: 0;
 }
 
@@ -187,7 +186,7 @@ section {
     font-size: 16px;
 }
 
-/* BOTÃO */
+/* BOTÃO FORM */
 .form-contato button {
     background-color: brown;
     color: white;
@@ -201,12 +200,6 @@ section {
 
 .form-contato button:hover {
     background-color: #5a2a0a;
-}
-
-/* MENSAGEM DE SUCESSO */
-#mensagem-sucesso {
-    font-weight: bold;
-    font-size: 18px;
 }
 
 /* ===================== */
@@ -233,7 +226,15 @@ section {
 }
 
 /* ===================== */
-/* RODAPÉ ESTILO MADEIRA */
+/* MENSAGEM */
+/* ===================== */
+#mensagem-sucesso {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* ===================== */
+/* RODAPÉ */
 /* ===================== */
 .footer-box {
     margin: 40px 20px;
@@ -305,4 +306,10 @@ section {
     .galeria {
         aspect-ratio: 1 / 1;
     }
+
+    .slide {
+        object-fit: contain; /* SEM CORTE */
+        background-color: black;
+    }
 }
+
