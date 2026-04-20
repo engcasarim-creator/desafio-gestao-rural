@@ -123,52 +123,6 @@ section {
 }
 
 /* ===================== */
-/* UX RETRO (8 BITS) */
-/* ===================== */
-
-.ux-retro {
-    font-family: 'Press Start 2P', cursive;
-    line-height: 1.8;
-}
-
-/* BOX RETRO */
-.retro-box {
-    border: 3px solid #00ff00;
-    box-shadow: 0 0 10px #00ff00;
-}
-
-/* TÍTULOS RETRO */
-.ux-retro h2 {
-    font-size: 14px;
-    margin-bottom: 15px;
-}
-
-/* TEXTO RETRO */
-.ux-retro p {
-    font-size: 12px;
-}
-
-/* BOTÃO JOGAR */
-.btn-jogar {
-    margin-top: 20px;
-    padding: 15px;
-    width: 100%;
-    max-width: 250px;
-    background-color: #228B22;
-    color: white;
-    border: none;
-    border-radius: 8px;
-    font-size: 18px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-.btn-jogar:hover {
-    background-color: #1a6e1a;
-    transform: scale(1.05);
-}
-/* ===================== */
 /* GALERIA DE FOTOS */
 /* ===================== */
 .titulo-galeria {
@@ -179,8 +133,9 @@ section {
 
 .galeria {
     position: relative;
+    width: 100%;
     max-width: 600px;
-    height: 350px;
+    aspect-ratio: 16 / 9;
     margin: auto;
     overflow: hidden;
     border-radius: 10px;
@@ -194,7 +149,7 @@ section {
     opacity: 0;
 }
 
-/* ANIMAÇÃO DAS IMAGENS */
+/* ANIMAÇÃO */
 .s1 { animation: fade 50s infinite; }
 .s2 { animation: fade 50s infinite 10s; }
 .s3 { animation: fade 50s infinite 20s; }
@@ -255,6 +210,29 @@ section {
 }
 
 /* ===================== */
+/* BOTÃO JOGAR */
+/* ===================== */
+.btn-jogar {
+    margin-top: 20px;
+    padding: 15px;
+    width: 100%;
+    max-width: 250px;
+    background-color: #228B22;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-jogar:hover {
+    background-color: #1a6e1a;
+    transform: scale(1.05);
+}
+
+/* ===================== */
 /* RODAPÉ ESTILO MADEIRA */
 /* ===================== */
 .footer-box {
@@ -267,6 +245,28 @@ section {
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.5);
     border-left: 5px solid #c89b6d;
+}
+
+/* ===================== */
+/* UX RETRO */
+/* ===================== */
+.ux-retro {
+    font-family: 'Press Start 2P', cursive;
+    line-height: 1.8;
+}
+
+.retro-box {
+    border: 3px solid #00ff00;
+    box-shadow: 0 0 10px #00ff00;
+}
+
+.ux-retro h2 {
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.ux-retro p {
+    font-size: 12px;
 }
 
 /* ===================== */
@@ -299,5 +299,10 @@ section {
 
     nav ul li {
         margin: 10px 0;
+    }
+
+    /* GALERIA NO CELULAR */
+    .galeria {
+        aspect-ratio: 1 / 1;
     }
 }
