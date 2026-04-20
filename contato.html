@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Tech Academy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <img src="imagens/menu.png" alt="Logo" class="menu-img">
+
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+    <nav id="menu">
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="sobre.html">SOBRE O JOGO</a></li>
+            <li><a href="historia.html">HISTÓRIA</a></li>
+            <li><a href="telas.html">TELAS</a></li>
+            <li><a href="contato.html">CONTATO</a></li>
+            <li><a href="ux.html">UX</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section>
+        <h1>ENTRE EM CONTATO</h1>
+
+        <form id="form-contato" class="form-contato"
+              action="https://formspree.io/f/xgorzkvp"
+              method="POST">
+
+            <label>Digite seu nome:</label>
+            <input type="text" name="nome" placeholder="Seu nome" required>
+
+            <label>Digite seu e-mail:</label>
+            <input type="email" name="email" placeholder="Seu e-mail" required>
+
+            <label>Mensagem:</label>
+            <textarea name="mensagem" placeholder="Escreva sua opinião sobre o jogo..." rows="5" required></textarea>
+
+            <button type="submit">ENVIAR MENSAGEM!</button>
+
+        </form>
+
+        <!-- Mensagem de sucesso -->
+        <p id="mensagem-sucesso" style="display:none; margin-top:15px; color:lightgreen;">
+            ✅ Mensagem enviada com sucesso!
+        </p>
+
+    </section>
+</main>
+
+<script>
+/* MENU MOBILE */
+function toggleMenu() {
+    document.getElementById("menu").classList.toggle("active");
+}
+
+/* ENVIO DO FORMULÁRIO */
+const form = document.getElementById("form-contato");
+const mensagem = document.getElementById("mensagem-sucesso");
+
+form.addEventListener("submit", async function(event) {
+    event.preventDefault();
+
+    const dados = new FormData(form);
+
+    const resposta = await fetch(form.action, {
+        method: form.method,
+        body: dados,
+        headers: {
+            'Accept': 'application/json'
+        }
+    });
+
+    if (resposta.ok) {
+        form.reset();
+        mensagem.style.display = "block";
+    } else {
+        alert("Erro ao enviar. Tente novamente.");
+    }
+});
+</script>
+
+</body>
+</html>

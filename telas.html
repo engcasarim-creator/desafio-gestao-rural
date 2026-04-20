@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <img src="imagens/menu.png" alt="Logo" class="menu-img">
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+    <nav id="menu">
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="sobre.html">SOBRE O JOGO</a></li>
+            <li><a href="historia.html">HISTÓRIA</a></li>
+            <li><a href="telas.html">TELAS</a></li>
+            <li><a href="contato.html">CONTATO</a></li>
+            <li><a href="ux.html">UX</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section>
+        <h1>TELAS</h1>
+        <p>Imagens e telas do jogo.</p>
+    </section>
+</main>
+
+<script>
+function toggleMenu() {
+    document.getElementById("menu").classList.toggle("active");
+}
+</script>
+
+</body>
+</html>

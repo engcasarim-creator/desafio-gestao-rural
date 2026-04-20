@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Tech Academy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <img src="imagens/menu.png" alt="Logo" class="menu-img">
+
+    <!-- BOTÃO MOBILE -->
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+    <nav id="menu">
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="sobre.html">SOBRE O JOGO</a></li>
+            <li><a href="historia.html">HISTÓRIA</a></li>
+            <li><a href="telas.html">TELAS</a></li>
+            <li><a href="contato.html">CONTATO</a></li>
+            <li><a href="ux.html">UX</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+    <!-- BANNER -->
+    <div class="banner">
+        <img src="imagens/logo.png" alt="Logo do site" class="banner-img">
+    </div>
+
+    <section>
+
+        <div class="box">
+            <h2>🚜 Bem-vindo ao Desafio Gestão Rural: O Jogo da Safra Inteligente</h2>
+            <p>
+                Onde o relógio e a terra ditam as regras.
+                Você já se perguntou se tem o que é preciso para comandar o agronegócio moderno?
+                Em Desafio Gestão Rural, você não é apenas um fazendeiro; você é um estrategista.
+                Aqui, o sucesso não depende da sorte, mas da sua capacidade de ler o céu, entender o solo e dominar o tempo.
+            </p>
+        </div>
+
+        <div class="box">
+            <h2>🌩️ O Tempo é o seu Maior Aliado... ou Inimigo</h2>
+            <p>
+                Diferente de qualquer simulador que você já jogou, aqui o relógio não para.
+                Cada segundo conta quando a janela de plantio está fechando ou quando uma tempestade se aproxima no horizonte.
+                <br><br>
+                <strong>Precisão no Relógio:</strong> Gerencie as horas do dia para maximizar a produtividade das suas máquinas.
+                <br><br>
+                <strong>Ciclo das Estações:</strong> Adapte-se ao rigor do inverno e à intensidade do verão.
+                Errar o timing de uma estação pode significar a perda de todo o seu investimento.
+            </p>
+        </div>
+
+        <div class="box">
+            <h2>📊 Torne-se um Mestre da Gestão</h2>
+            <p>
+                A agricultura moderna exige inteligência. No Desafio Gestão Rural, você toma as decisões de alto nível:
+                <br><br>
+                <strong>Escolha de Cultivares:</strong> Sementes de ciclo curto ou resistentes à seca?
+                <br><br>
+                <strong>Janelas de Oportunidade:</strong> Identifique o momento exato para entrar em campo.
+                <br><br>
+                <strong>Economia Real:</strong> Monitore o mercado e transforme sua fazenda em potência tecnológica.
+            </p>
+        </div>
+
+        <div class="box">
+            <h2>🛠️ Comece sua Jornada Hoje</h2>
+            <p>
+                A terra está pronta. As máquinas estão aquecendo.
+                Mas o clima está mudando e o mercado não espera por ninguém.
+                <br><br>
+                <em>"A diferença entre um fazendeiro e um gestor rural é a inteligência por trás da safra."</em>
+            </p>
+
+            <!-- BOTÃO -->
+            <button class="btn-jogar">JOGAR AGORA</button>
+        </div>
+
+    </section>
+
+</main>
+<script>
+/* MENU MOBILE */
+function toggleMenu() {
+    document.getElementById("menu").classList.toggle("active");
+}
+</script>
+
+</body>
+</html>

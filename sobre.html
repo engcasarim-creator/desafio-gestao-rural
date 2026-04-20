@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre o Jogo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <img src="imagens/menu.png" alt="Logo" class="menu-img">
+
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+    <nav id="menu">
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="sobre.html">SOBRE O JOGO</a></li>
+            <li><a href="historia.html">HISTÓRIA</a></li>
+            <li><a href="telas.html">TELAS</a></li>
+            <li><a href="contato.html">CONTATO</a></li>
+            <li><a href="ux.html">UX</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section>
+
+    <h1>🌾 A Herança de Terra Roxa</h1>
+
+    <div class="box">
+        <h2>O Prólogo</h2>
+        <p>
+            A história começa com você recebendo uma carta antiga. Seu avô, um dos pioneiros da agricultura na região,
+            deixou para você a Fazenda Alvorada. No passado, aquela terra era a mais produtiva do vale, mas anos de decisões
+            baseadas apenas na "sorte" e nas mudanças climáticas imprevisíveis a deixaram desgastada.
+            <br><br>
+            Agora, o mercado mudou. Não basta mais apenas jogar a semente na terra e esperar a chuva.
+            O mundo exige eficiência, sustentabilidade e, acima de tudo, estratégia.
+        </p>
+    </div>
+
+    <div class="box">
+        <h2>O Conflito</h2>
+        <p>
+            Você chega à fazenda com um orçamento apertado e um galpão de ferramentas antigo. O seu maior adversário? O Tempo.
+            Na região de Desafio Gestão Rural, as estações são rigorosas e o relógio não para. Se você atrasar o plantio da soja
+            por causa de uma manutenção mal planejada no trator, a geada do inverno pode destruir sua colheita de milho safrinha meses depois.
+        </p>
+    </div>
+
+    <div class="box">
+        <h2>O Objetivo: A Safra Inteligente</h2>
+        <p>
+            Para devolver a glória à Fazenda Alvorada, você precisará se tornar um mestre da gestão. O jogo se divide em ciclos críticos:
+            <br><br>
+            <strong>O Planejamento:</strong> Analisar as previsões meteorológicas para o trimestre. Escolher entre sementes mais resistentes ou de ciclo curto.
+            <br><br>
+            <strong>A Execução Contra o Relógio:</strong> Durante o período de plantio e colheita, cada hora conta.
+            <br><br>
+            <strong>A Gestão de Crise:</strong> Pragas surgem, o preço do diesel sobe e o mercado de commodities oscila.
+        </p>
+    </div>
+
+</section>
+</main>
+
+<!-- RODAPÉ -->
+<footer class="footer-box">
+    <p>
+        "Na agricultura, o ontem é aprendizado, o amanhã é previsão, mas o hoje...
+        o hoje é o único momento em que a semente encontra a terra.
+        Você está pronto para o desafio?"
+    </p>
+</footer>
+
+<script>
+function toggleMenu() {
+    document.getElementById("menu").classList.toggle("active");
+}
+</script>
+
+</body>
+</html>

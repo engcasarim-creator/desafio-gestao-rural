@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UX</title>
+
+    <!-- FONTE RETRO -->
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <img src="imagens/menu.png" alt="Logo" class="menu-img">
+
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+    <nav id="menu">
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="sobre.html">SOBRE O JOGO</a></li>
+            <li><a href="historia.html">HISTÓRIA</a></li>
+            <li><a href="telas.html">TELAS</a></li>
+            <li><a href="contato.html">CONTATO</a></li>
+            <li><a href="ux.html">UX</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section class="ux-retro">
+
+        <div class="box retro-box">
+            <h2>👤 Persona: Lucas, o "Arquiteto de Pixels"</h2>
+            <p>
+                Perfil: 18 a 28 anos. Gamer "Indie", entusiasta de design retro e estudante/entusiasta do agronegócio.
+                <br><br>
+                Comportamento: É fã de clássicos como Stardew Valley ou Harvest Moon, mas reclama que esses jogos são "muito românticos e pouco técnicos".
+                Ele gosta de otimização (o famoso min-maxing): quer extrair o máximo de lucro de cada pixel de terra.
+                <br><br>
+                Estilo Visual: Adora a estética Lo-Fi. Ele aprecia o fato de que cada grão de soja é um pixel e sente que o estilo 8 bits torna o jogo mais focado na lógica do que na distração visual.
+            </p>
+        </div>
+
+        <div class="box retro-box">
+            <h2>🧠 Mindset de UX (Estilo Retro)</h2>
+            <p>
+                Para o Lucas, o site deve parecer um manual de jogo clássico dos anos 90, mas com a fluidez de um site moderno.
+                Ele valoriza "segredos" e mecânicas bem explicadas em tabelas que lembram as antigas revistas de videogame.
+            </p>
+        </div>
+
+        <div class="box retro-box">
+            <h2>🚩 A Nova Dor / Demanda</h2>
+            <p>
+                A Dor: "Jogos de fazenda em 8 bits geralmente focam em amizades e decoração, ignorando a parte técnica e a pressão real da gestão agrícola."
+                <br><br>
+                A Solução que o Site oferece:
+                O site deve provar que baixo nível de detalhe gráfico não significa baixo nível de dificuldade.
+                A proposta é: "Gráficos simples, decisões complexas".
+                O site precisa comunicar que a estética 8 bits é uma escolha artística para focar no que importa: a gestão da safra inteligente.
+            </p>
+        </div>
+
+    </section>
+</main>
+
+<script>
+function toggleMenu() {
+    document.getElementById("menu").classList.toggle("active");
+}
+</script>
+
+</body>
+</html>
